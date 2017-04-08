@@ -85,8 +85,8 @@ Data/
 </p>
 
 **Task 3 : Using AlexNet as a feature extractor**
-1. A small ANN consisting of 256 neurons was trained on the features genereated from the last convolutional layer. After training using SGD for 80 epochs, we got a test accuracy of ~83%. This is almost as much as the accuract of AlexNet trained from scratch.
-2. The test accuracy plot shown below reveals huge overfitting as was the case in Task-1.
+1. A small ANN consisting of 256 neurons was trained on the features extracted from the last convolutional layer. After training for 80 epochs, we got a test accuracy of ~83%. This is almost as much as the accuracy of AlexNet trained from scratch.
+2. The test accuracy plot shown below reveals massive overfitting as was the case in Task-1.
 <p align="center">
   <img src="Plots/feature_extraction_convpool_5_accuracy1.png" alt="feature_extraction_convpool_5_accuracy1"/>
 </p>
