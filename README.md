@@ -10,13 +10,13 @@ A blog post accompanying this project can be found [here](https://rahulduggal260
 8. [License](#license)
 
 ## Motivation
-When I first started exploring deep learning (DL) in July 2016, many of the papers I read, established their baseline performance using the standard AlexNet model. In part this could be attributed to the several code examples readily available across almost all of the other major Deep Learning libraries. Further, the relatively fewer number of parameters in this model enabled users like me to run their experiments on a small GPU. Despite its significance, I could not find ready code examples for training AlexNet in the Keras framework. Through this project, I would like to share my experience of training this model in three very useful scenarios :-
+When I first started exploring deep learning (DL) in July 2016, many of the papers I read, established their baseline performance using the standard AlexNet model. In part this could be attributed to the several code examples readily available across almost all of the other major Deep Learning libraries. Despite its significance, I could not find ready code examples for training AlexNet in the Keras framework. Through this project, I would like to share my experience of training this model in three very useful scenarios :-
 
 1. **Training AlexNet end-to-end** - Also known as training from scratch
 2. **Fine-Tuning the pre-trained AlexNet** - extendable to transfer learning
 3. **Using AlexNet as a feature extractor** - useful for training a classifier such as SVM on top of "Deep" CNN features.
 
-I have re-used code from a lot of online resources, however the two most significant resources are :-
+I have re-used code from a lot of online resources, however the two most significant ones are :-
 1. [This](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html) blogpost by the creator of keras - Francois Chollet.
 2. [This](https://github.com/heuritech/convnets-keras) project by Heuritech, which has implemented the AlexNet architecture.
 
