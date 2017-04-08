@@ -68,22 +68,28 @@ Data/
 **Task 1 : Training from scratch**
 1. On training the network using stochastic gradient descent with a fixed learning rate of 0.01, for 80 epochs, we acheive a test accuracy of ~84.5%.
 2. The train and test plots shown below suggest overfitting.
-![](Plots/accuracy_scratch.png)
+<p align="center">
+  <img src="Plots/accuracy_scratch.png" alt="accuracy_scratch"/>
+</p>
+
 **Task 2 : Fine tuning a pre-trained AlexNet**
 1. Several papers talk about different strategies for fine-tuning. In this project, I execute the strategy proposed in [this](http://ieeexplore.ieee.org/abstract/document/7426826/) recent paper. The basic strategy is to train layer-wise. So if our network has 5 layers : L1,L2,...,L5. In the first round, we freeze L1-L4 and tune only L5. In the second round, we include L4 in the training. So L4-L5 are allowed to tune for some epochs. The third round includes L3 in the training. So now L3-L5 are tuned. Similarly the training percolates to previous layers. 
 2. Training for 80 epochs, using the above strategy, we reach a test accuracy of ~89%. This is almost a 5% jump over training from scratch. The test error plot is shown below.
-
-![](Plots/accuracy_finetune.png)
+<p align="center">
+  <img src="Plots/accuracy_finetune.png" alt="accuracy_finetune"/>
+</p>
 
 3. To compare fine-tuning v/s training from scratch, we plot the test accuracies for fine-tuning (Task 2) v/s training from scratch (Task 1) below. Notive how the accuracy curve for fine-tuning stays above the plot for task 1.
-
-![](Plots/finetune_vs_scratch_accuracy1.png)
+<p align="center">
+  <img src="Plots/finetune_vs_scratch_accuracy1.png" alt="finetune_vs_scratch_accuracy1"/>
+</p>
 
 **Task 3 : Using AlexNet as a feature extractor**
 1. A small ANN consisting of 256 neurons was trained on the features genereated from the last convolutional layer. After training using SGD for 80 epochs, we got a test accuracy of ~83%. This is almost as much as the accuract of AlexNet trained from scratch.
 2. The test accuracy plot shown below reveals huge overfitting as was the case in Task-1.
-
-![](Plots/feature_extraction_convpool_5_accuracy1.png)
+<p align="center">
+  <img src="feature_extraction_convpool_5_accuracy1.png" alt="feature_extraction_convpool_5_accuracy1"/>
+</p>
 
 ## TO-DO
 1. The mean subtraction layer (look inside alexnet_base.py) currently uses a theano function - set_subtensor. To make this project independant of the backend, we need to find the corresponding function in tensorflow. (Any suggestions?)
