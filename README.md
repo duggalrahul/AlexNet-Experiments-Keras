@@ -38,29 +38,29 @@ Data/
             .
             .
             .
-            cat.1000.jpg
+            cat.999.jpg
          dogs/
             dog.0.jpg
             dog.1.jpg
             .
             .
             .
-            dog.1000.jpg
+            dog.999.jpg
      Test/
-        cats/
+         cats/
             cat.0.jpg
             cat.1.jpg
             .
             .
             .
-            cat.400.jpg
+            cat.399.jpg
          dogs/
             dog.0.jpg
             dog.1.jpg
             .
             .
             .
-            dog.400.jpg
+            dog.399.jpg
 ```
 - Once the dataset is in order, follow the code in the ipython notebook AlexNet_Experiments.
 
