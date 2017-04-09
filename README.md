@@ -66,7 +66,8 @@ Data/
             .
             dog.399.jpg
 ```
-- Once the dataset is in order, navigate to the project root directory, and run the command ```jupyter notebook``` on your shell. This will open a new tab in your browser. Navigate to ```Code/``` and open the file ```AlexNet_Experiments.ipynb```.
+- Download the pre-trained weights for alexnet from [here](http://files.heuritech.com/weights/alexnet_weights.h5) and place them in ```convnets-keras/weights/```.
+- Once the dataset and weights are in order, navigate to the project root directory, and run the command ```jupyter notebook``` on your shell. This will open a new tab in your browser. Navigate to ```Code/``` and open the file ```AlexNet_Experiments.ipynb```.
 - Now you can execute each code cell using ```Shift+Enter``` to generate its output.
 
 ## Results
