@@ -10,7 +10,7 @@ A blog post accompanying this project can be found [here](https://rahulduggal260
 8. [License](#license)
 
 ## Motivation
-When I first started exploring deep learning (DL) in July 2016, many of the papers I read, established their baseline performance using the standard AlexNet model. In part this could be attributed to the several code examples readily available across all major Deep Learning libraries. Despite its significance, I could not find ready code examples for training AlexNet in the Keras framework. Through this project, I am sharing my experience of training this model in three very useful scenarios :-
+When I first started exploring deep learning (DL) in July 2016, many of the papers I read established their baseline performance using the standard AlexNet model. In part, this could be attributed to the several code examples readily available across all major Deep Learning libraries. Despite its significance, I could not find readily available code examples for training AlexNet in the Keras framework. Through this project, I am sharing my experience of training AlexNet in three very useful scenarios :-
 
 1. **Training AlexNet end-to-end** - Also known as training from scratch
 2. **Fine-Tuning the pre-trained AlexNet** - extendable to transfer learning
@@ -31,7 +31,7 @@ Make sure you have the following libraries installed.
 
 
 ## Experiments
-- To perform the three tasks outlined in the motivation, first we need to get the dataset in order. We run our experiments on the dogs v/s cats training dataset available [here](https://www.kaggle.com/c/dogs-vs-cats/data).
+- To perform the three tasks outlined in the motivation, first we need to get the dataset. We run our experiments on the dogs v/s cats training dataset available [here](https://www.kaggle.com/c/dogs-vs-cats/data).
 - We use 1000 images from each class for training and evaluate on 400 images from each class. Ensure that the images are placed as in the following directory structure.
 ```python
 Data/
@@ -73,7 +73,7 @@ Data/
 ## Results
 **Task 1 : Training from scratch**
 1. Training AlexNet, using stochastic gradient descent with a fixed learning rate of 0.01, for 80 epochs, we acheive a test accuracy of ~84.5%.
-2. In accuracy plot shown below notice the large gap between the training and testing curves. This suggests that our model is overfitting. This is usually a problem when we have few training examples (~2000 in our case). However, this problem can be partially addressed through finetuning a pre-trained network as we will see in the next subsection.
+2. In accuracy plot shown below, notice the large gap between the training and testing curves. This suggests that our model is overfitting. This is usually a problem when we have few training examples (~2000 in our case). However, this problem can be partially addressed through finetuning a pre-trained network as we will see in the next subsection.
 <p align="center">
   <img src="Plots/accuracy_scratch.png" alt="accuracy_scratch"/>
 </p>
