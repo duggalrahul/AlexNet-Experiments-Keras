@@ -1,4 +1,4 @@
-# AlexNet using Keras and Theano
+# My experiments with AlexNet, using Keras and Theano
 A blog post accompanying this project can be found [here](https://rahulduggal2608.wordpress.com/2017/04/02/alexnet-in-keras/).
 
 ## Contents
