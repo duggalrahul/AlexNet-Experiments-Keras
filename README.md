@@ -2,11 +2,11 @@
 A blog post accompanying this project can be found [here](https://rahulduggal2608.wordpress.com/2017/04/02/alexnet-in-keras/).
 
 ## Contents
-1. [Motivation](#Motivation)
-2. [Requirements](#Requirements)
-3. [Experiments](#Experiments)
-4. [Results](#Results)
-5. [TO-DO](#TO-DO)
+1. [Motivation](#motivation)
+2. [Requirements](#requirements)
+3. [Experiments](#experiments)
+4. [Results](#results)
+5. [TO-DO](#to-do)
 8. [License](#license)
 
 ## Motivation

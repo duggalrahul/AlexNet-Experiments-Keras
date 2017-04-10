@@ -22,6 +22,7 @@ def mean_subtract(img):
     return img / 255.0
 
 def get_alexnet(input_shape,nb_classes,mean_flag): 
+	# code adapted from https://github.com/heuritech/convnets-keras
 
 	inputs = Input(shape=input_shape)
 
